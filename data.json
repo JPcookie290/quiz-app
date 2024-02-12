@@ -1,0 +1,32 @@
+{
+  "questions": [
+    {
+      "question": "What is the answer to everything?",
+      "id": "jhwud3",
+      "answerId": 4,
+      "answers": [
+        { "answer": "To live life to the fullest", "id": 1 },
+        { "answer": "Qwertz Uiopü", "id": 2 },
+        { "answer": "There is no right answer, the word is chaos.", "id": 3 },
+        { "answer": "42", "id": 4 }
+      ]
+    },
+    {
+      "question": "Family means what?",
+      "id": "j4u5t",
+      "answerId": 2,
+      "answers": [
+        { "answer": "Individuals, who are related by blood.", "id": 1 },
+        { "answer": "Nobody gets left behind.", "id": 2 },
+        {
+          "answer": "A group of people brought together by blood relations, adoption or marriage.",
+          "id": 3
+        },
+        {
+          "answer": "A collective of people bound to each other by circumstance",
+          "id": 4
+        }
+      ]
+    }
+  ]
+}
