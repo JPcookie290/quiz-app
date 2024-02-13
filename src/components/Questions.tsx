@@ -33,7 +33,7 @@ export default function Questions() {
               <h2>{question.question}</h2>
               <Answers
                 answerId={question.answerId}
-                answers={question.answers}
+                answerArray={question.answers}
               ></Answers>
             </div>
           );

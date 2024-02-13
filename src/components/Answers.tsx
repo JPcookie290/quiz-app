@@ -1,17 +1,34 @@
 import { IAnswer } from "../util/globalInterface";
-// import { useState } from "react";
+import { useState } from "react";
 
 interface Props {
   answerId: number;
-  answers: IAnswer[];
+  answerArray: IAnswer[];
 }
 
-export default function Answers({ answerId, answers }: Props) {
-  //   const [picked, setPicked] = useState(false);
+export default function Answers({ answerId, answerArray }: Props) {
+  // const [right, setRight] = useState(0);
+  // const [wrong, setWrong] = useState(0);
 
-  const markAnswer = (answer: IAnswer): void => {
-    console.log(answer);
-    console.log("Wanted Id: ", answerId);
+  //   const [picked, setPicked] = useState(false);
+  const [answers, setAnswers] = useState<IAnswer[]>([...answerArray]);
+
+  const markAnswer = (choice: IAnswer): void => {
+    answers.map((answer) => {
+      if (choice.id === answer.id) {
+        answer.marked = true;
+      } else {
+        answer.marked = false;
+      }
+    });
+  };
+
+  const checkAnswer = () => {
+    answers.map((answer: IAnswer) => {
+      if (answer.marked === true && answer.id === answerId) {
+        console.log("right answer: ", answer);
+      }
+    });
   };
 
   return (
@@ -23,7 +40,7 @@ export default function Answers({ answerId, answers }: Props) {
           </div>
         );
       })}
-      <button type="submit">Submit</button>
+      <button onClick={checkAnswer}>Submit</button>
     </>
   );
 }
