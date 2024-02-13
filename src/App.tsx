@@ -1,7 +1,12 @@
-import "./App.css";
+import Questions from "./components/Questions";
+import "./testStyles.css";
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <Questions></Questions>
+    </>
+  );
 }
 
 export default App;

@@ -1,29 +1,39 @@
 {
   "questions": [
     {
-      "question": "What is the answer to everything?",
+      "question": "What is the meaning of life?",
       "id": "jhwud3",
       "answerId": 4,
       "answers": [
-        { "answer": "To live life to the fullest", "id": 1 },
-        { "answer": "Qwertz Uiopü", "id": 2 },
-        { "answer": "There is no right answer, the word is chaos.", "id": 3 },
-        { "answer": "42", "id": 4 }
+        { "answer": "To live life to the fullest", "marked": false, "id": 1 },
+        { "answer": "Qwertz Uiopü", "marked": false, "id": 2 },
+        {
+          "answer": "There is no right answer, the word is chaos",
+          "marked": false,
+          "id": 3
+        },
+        { "answer": "42", "marked": false, "id": 4 }
       ]
     },
     {
-      "question": "Family means what?",
+      "question": "What means Ohana?",
       "id": "j4u5t",
       "answerId": 2,
       "answers": [
-        { "answer": "Individuals, who are related by blood.", "id": 1 },
-        { "answer": "Nobody gets left behind.", "id": 2 },
         {
-          "answer": "A group of people brought together by blood relations, adoption or marriage.",
+          "answer": "Individuals, who are related by blood",
+          "marked": false,
+          "id": 1
+        },
+        { "answer": "Nobody gets left behind", "marked": false, "id": 2 },
+        {
+          "answer": "A group of people brought together by blood relations, adoption or marriage",
+          "marked": false,
           "id": 3
         },
         {
           "answer": "A collective of people bound to each other by circumstance",
+          "marked": false,
           "id": 4
         }
       ]
